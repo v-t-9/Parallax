@@ -1,0 +1,9 @@
+:root{
+    --white: #f1f3f6;
+    --orange: #c68862;
+    --violet: #6761A8;
+}
+p{
+    --font-size: 1.2em;
+    --margin: 20px 60px;
+}
