@@ -3,15 +3,8 @@
 }
 body{
     color: var(--white);
-    background-color: var(--violet);
 }
-/* .grid{
-    display: grid;
-    grid-template-columns: repeat(3,50fr);
-    grid-template-rows: repeat(3,50fr);
-    padding: 20px;
-    gap: 2em;
-} */
+
 .parallax1{
     background-image: url(img/mountainsLake.jpg);
     height:100vh;
@@ -19,20 +12,25 @@ body{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-h1{
+.parallax1 h1{
     background-color: var(--orange);
-    position: absolute;
     padding: 30px;
-    top:30%;
-    left: 40%;
+    margin: var(--margin);
+   
 }
 
-p{
+.parallax1 p{
+    background-color: var(--orange);
     font-size: var(--font-size);
+    font-weight: bold;
     margin: var(--margin);
-    text-align: justify;
+    padding: 30px;
 }
 .parallax2{
     background-image: url(img/sunLake.jpg);
@@ -44,30 +42,23 @@ p{
 }
 #grid{
     display: grid;
-    gap: 2em;
+    gap: 1em;
+    align-items: center;
+    justify-items: center;
     grid-template-areas: "a b"
                          "c d";
 }
-.p1{
-    
+.benefits{
     grid-area: a;
+    width: 20%;
+    height: 20%;
     background-color: var(--orange);
     font-weight: bold;
-    font-size: var(--font-size);
     margin: var(--margin);
-    text-align: justify;
-    padding: 25px;
+    text-align: center;
+    padding: 20px;
 }
-.p2{
-    grid-area: b;
-    background-color: var(--orange);
-    font-weight: bold;
-    font-size: var(--font-size);
-    margin: var(--margin);
-    text-align: justify;
-    padding: 25px;
-}
-.p3{
+.benefits-list{
     grid-area: c;
     background-color: var(--orange);
     font-weight: bold;
@@ -75,8 +66,23 @@ p{
     margin: var(--margin);
     text-align: justify;
     padding: 25px;
+    width: 70%;
+    height: 80%;
 }
-.p4{
+.parallax2 ul li{
+    margin: var(--margin);
+}
+.drawbacks{
+    grid-area: b;
+    width: 20%;
+    height: 20%;
+    background-color: var(--orange);
+    font-weight: bold;
+    margin: var(--margin);
+    text-align: center;
+    padding: 25px;
+}
+.drawbacks-list{
     grid-area: d;
     background-color: var(--orange);
     font-weight: bold;
@@ -84,6 +90,8 @@ p{
     margin: var(--margin);
     text-align: justify;
     padding: 25px;
+    width: 70%;
+    height: 80%;
 }
 .parallax3{
     background-image: url(img/purpuleSunset.jpg);
@@ -92,4 +100,22 @@ p{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    background-color: var(--orange);
+    padding: 30px;
+    margin: var(--margin);
+}
+.parallax3 ul{
+    background-color: var(--orange);
+    font-size: var(--font-size);
+    font-weight: bold;
+    margin: var(--margin);
+}
+.parallax3 ul li{
+    margin: var(--margin);
 }
